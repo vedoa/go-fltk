@@ -13,7 +13,7 @@ import (
 	"strings"
 )
 
-const commit = "tags/release-1.4.4"
+const commit = "tags/release-1.4.5"
 
 func main() {
 	if runtime.GOOS == "" {
@@ -140,6 +140,7 @@ func main() {
 		"-DFLTK_USE_SYSTEM_LIBJPEG=OFF",
 		"-DFLTK_USE_SYSTEM_LIBPNG=OFF",
 		"-DFLTK_USE_SYSTEM_ZLIB=OFF",
+		"-DFLTK_USE_LIBDECOR_GTK=OFF",
 		"-DCMAKE_INSTALL_PREFIX="+currentDir,
 		"-DCMAKE_INSTALL_INCLUDEDIR="+includeDir,
 		"-DCMAKE_INSTALL_LIBDIR="+libDir,
